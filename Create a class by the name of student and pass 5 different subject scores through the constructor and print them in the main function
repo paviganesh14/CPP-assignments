@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+	int english,maths,physics,chemistry,biology;
+	student(int a,int b,int c,int d,int e)
+	{
+		english=a;
+		maths=b;
+		physics=c;
+		chemistry=d;
+		biology=e;
+	};
+};
+
+int main()
+{
+	int english,maths,physics,chemistry,biology;
+    student meera(100,90,100,50,40);
+    cout<<"The english mark of meera is "<<meera.english<<"\n";
+	cout<<"The mathematics mark of meera is "<<meera.maths<<"\n";
+	cout<<"The physics mark of meera is "<<meera.physics<<"\n";
+	cout<<"The chemistry mark of meera is "<<meera.chemistry<<"\n";
+	cout<<"The biology mark of meera is "<<meera.biology<<"\n";
+    return 0;
+   	
+}
