@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	int product;
+	cout<<"enter the number for which the multiplication table needs to be displayed ";
+	cin>>n;
+	int i;
+	cout<<"The multiplication table of the given number "<<n<<" is :";
+	cout<<"\n";
+	for(i=1;i<=10;i++)
+	{
+		product=i*n;
+        cout<<i<<" x "<<n<<" = "<<product<<"\n";
+	}
+}
