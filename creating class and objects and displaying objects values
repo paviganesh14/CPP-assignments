@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class fruit
+{
+	public:
+		string taste,size,colour,season;
+		string a,b,c,d;
+		fruit(string a,string b,string c,string d)
+		{
+			taste=a;
+			size=b;
+			colour=c;
+			season=d;
+		};
+		int display(string a,string b,string c,string d);
+};
+
+int fruit :: display(string a,string b,string c,string d)
+{
+	
+	cout<<"The tatse of the fruit is :"<<taste<<"\n";
+	cout<<"The size of the fruit is :"<<size<<"\n";
+	cout<<"The colour of the fruit is :"<<colour<<"\n";
+    cout<<"The season during which the fruit is obtained :"<<season<<"\n";
+    return 0;
+}
+
+int main()
+{
+	string a,b,c,d;
+	fruit mango("Sweet","medium","Yellow","summer");
+	fruit watermelon("sweet","large","green","summer");
+	cout<<"The description of the fruit Mango is :"<<"\n";
+	cout<<"\n";
+	mango.display(a,b,c,d);
+	cout<<"\n";
+	cout<<"**********************************************";
+	cout<<"\n";
+	cout<<"\n";
+	cout<<"The description of the fruit Mango is :"<<"\n";
+	cout<<"\n";
+	watermelon.display(a,b,c,d);
+	return 0;
+}
